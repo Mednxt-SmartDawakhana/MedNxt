@@ -168,6 +168,11 @@ section:first-of-type{border-top:0}
 .hours td:last-child{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink);font-weight:600}
 .hours tr[data-today] td{color:var(--brand);font-weight:700}
 
+/* store photo */
+.shot{margin:0 0 18px}
+.shot img{display:block;width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line)}
+.shot figcaption{font-size:.86rem;color:var(--mute);margin-top:8px}
+
 /* map facade */
 .mapbox{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--surface)}
 .mapbox button{
@@ -199,6 +204,9 @@ details .ans p:last-child{margin:0}
 /* footer */
 footer{background:var(--surface);border-top:1px solid var(--line);padding:26px 0;font-size:.9rem}
 footer .addr{font-style:normal;color:var(--body);margin-bottom:12px}
+.contacts{display:flex;flex-direction:column;gap:7px;margin-top:10px}
+.contacts a{width:fit-content;text-decoration:none;font-weight:650;min-height:24px}
+.contacts a:hover,.contacts a:focus-visible{text-decoration:underline}
 footer .legal{color:var(--mute);font-size:.82rem;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
 footer strong{color:var(--ink)}
 .trustline{display:none;gap:6px;flex-wrap:wrap;font-size:.85rem;color:var(--body);margin-bottom:10px}
@@ -249,7 +257,10 @@ html[data-lang="hi"] .i18n>[lang="hi"]{display:revert}
   "alternateName":"MedNxt Smart Dawakhana",
   "description":"Medical store in Gaya, Bihar offering 100% genuine medicines with a discount of up to 15% and free same-day home delivery across Gaya.",
   "url":"https://mednxt-smartdawakhana.github.io/MedNxt/",
-  "image":"https://mednxt-smartdawakhana.github.io/MedNxt/assets/og-image-v2.png",
+  "image":[
+    "https://mednxt-smartdawakhana.github.io/MedNxt/assets/shopfront.jpg",
+    "https://mednxt-smartdawakhana.github.io/MedNxt/assets/og-image-v2.png"
+  ],
   "logo":"https://mednxt-smartdawakhana.github.io/MedNxt/assets/icon-512.png",
   "telephone":"+918986030095",
   "priceRange":"₹₹",
@@ -453,6 +464,19 @@ html[data-lang="hi"] .i18n>[lang="hi"]{display:revert}
 <section id="visit">
   <div class="wrap">
     <h2 class="i18n"><span lang="en">Visit the store</span><span lang="hi">दुकान पर आइए</span></h2>
+
+    <figure class="shot">
+      <picture>
+        <source srcset="assets/shopfront.webp" type="image/webp">
+        <img src="assets/shopfront.jpg" width="1200" height="810" loading="lazy" decoding="async"
+             alt="MedNxt Smart Dawakhana shopfront on G.B. Road, Gaya — blue signboard above an open, fully stocked medical store">
+      </picture>
+      <figcaption class="i18n">
+        <span lang="en">Look for the blue MedNxt board near Gol Patthar Chowk.</span>
+        <span lang="hi">गोल पत्थर चौक के पास नीला मेडनेक्स्ट बोर्ड देखिए।</span>
+      </figcaption>
+    </figure>
+
     <address class="addr" style="font-style:normal;margin-bottom:14px">
       <strong>MedNxt</strong><br>
       <span class="i18n"><span lang="en">Near Gol Patthar Chowk, G.B. Road</span><span lang="hi">गोल पत्थर चौक के पास, जी.बी. रोड</span></span><br>
@@ -539,7 +563,10 @@ html[data-lang="hi"] .i18n>[lang="hi"]{display:revert}
     <address class="addr">
       <strong>MedNxt</strong><br>
       <span class="i18n"><span lang="en">Near Gol Patthar Chowk, G.B. Road, Gaya, Bihar 823001</span><span lang="hi">गोल पत्थर चौक के पास, जी.बी. रोड, गया, बिहार 823001</span></span><br>
-      <a data-tel href="#" id="foot-tel">+91 89860 30095</a>
+      <span class="contacts">
+        <a data-tel href="#" id="foot-tel">+91 89860 30095</a>
+        <a href="https://wa.me/918544168111" target="_blank" rel="noopener">WhatsApp +91 85441 68111</a>
+      </span>
     </address>
     <div class="legal">
       <span class="i18n">
