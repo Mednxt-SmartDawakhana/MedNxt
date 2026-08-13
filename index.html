@@ -767,8 +767,10 @@ const BUSINESS = {
     const a = e.target.closest('a');
     if (!a) return;
     if (a.matches('[data-wa]')) track('whatsapp_click', a.dataset.waMsg || 'order');
-    else if (a.matches('[data-tel]')) track('call_click');
     else if (a.id === 'directions') track('directions_click');
+  });
+  document.addEventListener('pointerdown', e => {
+    if (e.target.closest('a[data-tel]')) track('call_click');
   });
 
   if (BUSINESS.analyticsId) {
