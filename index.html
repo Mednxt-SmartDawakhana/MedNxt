@@ -1,180 +1,797 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedNxt - Your Trusted Medicine Partner</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #1a237e;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1a237e">
 
-        header {
-            background-color: #1a237e;
-            color: white;
-            padding: 1.5rem 1rem;
-        }
+<title>MedNxt Gaya — Medicine Home Delivery, Same Day | Chemist near Gol Patthar Chowk</title>
+<meta name="description" content="MedNxt is a trusted medical store in Gaya, Bihar. 100% genuine medicines, 10–15% off, free same-day home delivery across Gaya. Order on WhatsApp or call. Near Gol Patthar Chowk, G.B. Road.">
+<meta name="keywords" content="medical store gaya, medicine home delivery gaya, chemist gaya bihar, dawa dukan gaya, online medicine gaya, pharmacy near me gaya, gol patthar chowk medical">
+<link rel="canonical" href="https://mednxt-smartdawakhana.github.io/MedNxt/">
 
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-            font-weight: bold;
-        }
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MedNxt">
+<meta property="og:title" content="MedNxt — Same-day medicine delivery in Gaya">
+<meta property="og:description" content="100% genuine medicines · 10–15% off · Free same-day home delivery across Gaya. Order on WhatsApp.">
+<meta property="og:url" content="https://mednxt-smartdawakhana.github.io/MedNxt/">
+<meta property="og:image" content="https://mednxt-smartdawakhana.github.io/MedNxt/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MedNxt — Same-day medicine delivery in Gaya">
+<meta name="twitter:description" content="100% genuine medicines · 10–15% off · Free same-day home delivery across Gaya.">
+<meta name="twitter:image" content="https://mednxt-smartdawakhana.github.io/MedNxt/assets/og-image.png">
 
-        main {
-            padding: 2rem 1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="manifest" href="site.webmanifest">
 
-        .logo-container {
-            margin: 1rem auto;
-        }
+<style>
+:root{
+  --navy:#16205e; --brand:#1a237e; --blue:#1565c0; --blue-soft:#e8f0fe;
+  --wa:#1da851; --wa-dark:#128c3e;
+  --ink:#111827; --body:#374151; --mute:#6b7280;
+  --bg:#ffffff; --surface:#f6f8fc; --line:#e3e8f0;
+  --ok:#12803c; --ok-bg:#e6f6ec; --off:#9a3412; --off-bg:#fdf0e6;
+  --radius:14px; --bar:72px;
+  --shadow:0 1px 2px rgba(16,24,40,.06),0 6px 20px rgba(16,24,40,.07);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --navy:#c9d6ff; --brand:#aabaf5; --blue:#7aa9f0; --blue-soft:#1b2540;
+    --ink:#f3f5f9; --body:#c8cfdd; --mute:#94a0b4;
+    --bg:#0e1320; --surface:#161d2e; --line:#28324a;
+    --ok:#63d492; --ok-bg:#12301f; --off:#f0a875; --off-bg:#2f1d12;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.35);
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari",Arial,sans-serif;
+  font-size:17px; line-height:1.62; color:var(--body); background:var(--bg);
+  padding-bottom:calc(var(--bar) + env(safe-area-inset-bottom));
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{color:var(--ink);line-height:1.25;margin:0 0 .5rem;text-wrap:balance}
+h1{font-size:1.72rem;letter-spacing:-.02em}
+h2{font-size:1.3rem;letter-spacing:-.01em}
+h3{font-size:1.02rem}
+p{margin:0 0 .9rem}
+a{color:var(--blue)}
+img{max-width:100%;height:auto}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:6px}
 
-        .logo-container img {
-            max-width: 200px;
-            height: auto;
-        }
+.wrap{width:100%;max-width:680px;margin-inline:auto;padding-inline:18px}
+section{padding:30px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
 
-        .offer {
-            background-color: #1976d2;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1.5rem;
-            font-size: 1.2rem;
-            color: white;
-        }
+.skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;padding:12px 18px;z-index:100}
+.skip:focus{left:8px;top:8px}
 
-        .trust {
-            margin: 1rem 0;
-            font-size: 1rem;
-            color: #424242;
-        }
+/* header */
+.site-head{
+  position:sticky;top:0;z-index:40;background:var(--bg);
+  border-bottom:1px solid var(--line);
+  padding-top:env(safe-area-inset-top);
+}
+.head-in{display:flex;align-items:center;gap:10px;padding-block:10px}
+.head-in img{width:38px;height:38px;border-radius:9px;flex:none}
+.brand-name{font-weight:800;font-size:1.16rem;color:var(--brand);letter-spacing:-.02em;line-height:1.1}
+.brand-sub{font-size:.7rem;color:var(--mute);letter-spacing:.06em;text-transform:uppercase;line-height:1.1}
+.lang{margin-left:auto;display:flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{
+  min-height:34px;padding:0 13px;border:0;border-radius:999px;background:none;
+  font:inherit;font-size:.86rem;font-weight:700;color:var(--mute);cursor:pointer;
+}
+.lang button[aria-pressed="true"]{background:var(--brand);color:#fff}
 
-        .cta-button {
-            display: inline-block;
-            background-color: #0d47a1;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border: none;
-            border-radius: 6px;
-            font-size: 1rem;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            animation: pulse 1.5s infinite;
-            margin-top: 1rem;
-        }
+/* hero */
+.hero{padding-top:26px}
+.status{
+  display:none;align-items:center;gap:7px;font-size:.85rem;font-weight:700;
+  padding:5px 12px;border-radius:999px;margin-bottom:14px;width:fit-content;
+}
+.status[data-open="yes"]{display:inline-flex;color:var(--ok);background:var(--ok-bg)}
+.status[data-open="no"]{display:inline-flex;color:var(--off);background:var(--off-bg)}
+.status .dot{width:8px;height:8px;border-radius:50%;background:currentColor;flex:none}
+.status[data-open="yes"] .dot{animation:blip 2.2s ease-in-out infinite}
+@keyframes blip{0%,100%{opacity:1}50%{opacity:.35}}
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
+.lede{font-size:1.06rem;color:var(--body);margin-bottom:18px}
+.offer{
+  display:flex;gap:12px;align-items:flex-start;
+  background:var(--blue-soft);border:1px solid var(--line);
+  border-radius:var(--radius);padding:14px 16px;margin-bottom:18px;
+}
+.offer .big{font-weight:800;color:var(--brand);font-size:1.3rem;line-height:1.15;white-space:nowrap}
+.offer .txt{font-size:.94rem;color:var(--body)}
 
-        .cta-button:hover {
-            background-color: #0b3d91;
-        }
+/* buttons */
+.actions{display:grid;gap:10px}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  min-height:54px;padding:0 18px;border-radius:var(--radius);border:2px solid transparent;
+  font-size:1.03rem;font-weight:700;text-decoration:none;cursor:pointer;
+  transition:transform .12s ease,background-color .2s ease;
+}
+.btn:active{transform:scale(.985)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-dark)}
+.btn-call{background:var(--bg);color:var(--brand);border-color:var(--brand)}
+.btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--line);min-height:48px;font-size:.96rem}
+.btn svg{width:21px;height:21px;flex:none;fill:currentColor}
 
-        footer {
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: #616161;
-        }
+.micro{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:16px;font-size:.86rem;color:var(--mute)}
+.micro span{display:inline-flex;align-items:center;gap:6px}
+.micro svg{width:15px;height:15px;fill:var(--ok);flex:none}
 
-        .map-container {
-            margin-top: 2rem;
-        }
+/* cards & lists */
+.cards{display:grid;gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+.card h3{margin-bottom:.2rem;color:var(--brand)}
+.card p{margin:0;font-size:.94rem}
 
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-            border-radius: 8px;
-        }
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:s}
+.steps li{display:flex;gap:14px;align-items:flex-start;counter-increment:s}
+.steps li::before{
+  content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;
+  background:var(--brand);color:#fff;font-weight:800;font-size:.95rem;
+  display:grid;place-items:center;margin-top:1px;
+}
+.steps strong{display:block;color:var(--ink)}
+.steps span{font-size:.92rem}
 
-        .how-it-works {
-            background-color: #f5f5f5;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-top: 1.5rem;
-        }
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;padding:0;list-style:none}
+.chips li{
+  background:var(--surface);border:1px solid var(--line);border-radius:999px;
+  padding:8px 14px;font-size:.9rem;color:var(--ink);font-weight:500;
+}
 
-        .how-it-works h3 {
-            color: #1a237e;
-        }
+/* comparison */
+.vs{width:100%;border-collapse:collapse;font-size:.93rem;margin-top:6px}
+.vs th,.vs td{padding:11px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.vs thead th{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mute);font-weight:700}
+.vs tbody th{font-weight:600;color:var(--body)}
+.vs .us{color:var(--ok);font-weight:700;white-space:nowrap}
+.vs .them{color:var(--mute);white-space:nowrap}
 
-        .how-it-works p {
-            margin: 0.5rem 0;
-        }
+/* hours */
+.hours{width:100%;border-collapse:collapse;font-size:.94rem}
+.hours td{padding:9px 4px;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink);font-weight:600}
+.hours tr[data-today] td{color:var(--brand);font-weight:700}
 
-        .visit-store {
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin-top: 1.5rem;
-        }
+/* map facade */
+.mapbox{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.mapbox button{
+  all:unset;display:grid;place-items:center;gap:10px;width:100%;
+  min-height:190px;cursor:pointer;text-align:center;padding:22px;box-sizing:border-box;
+}
+.mapbox button:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
+.mapbox .pin{font-size:2rem;line-height:1}
+.mapbox .lbl{font-weight:700;color:var(--brand)}
+.mapbox .hint{font-size:.85rem;color:var(--mute)}
+.mapbox iframe{display:block;width:100%;height:300px;border:0}
 
-        @media (min-width: 768px) {
-            main {
-                max-width: 800px;
-            }
-            iframe {
-                height: 400px;
-            }
-        }
-    </style>
+/* faq */
+details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);margin-bottom:10px;overflow:hidden}
+summary{
+  padding:15px 44px 15px 16px;font-weight:650;color:var(--ink);cursor:pointer;
+  list-style:none;position:relative;min-height:24px;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"";position:absolute;right:18px;top:50%;width:9px;height:9px;
+  border-right:2.5px solid var(--mute);border-bottom:2.5px solid var(--mute);
+  transform:translateY(-70%) rotate(45deg);transition:transform .2s ease;
+}
+details[open] summary::after{transform:translateY(-25%) rotate(-135deg)}
+details .ans{padding:0 16px 15px;font-size:.94rem}
+details .ans p:last-child{margin:0}
+
+/* footer */
+footer{background:var(--surface);border-top:1px solid var(--line);padding:26px 0;font-size:.9rem}
+footer .addr{font-style:normal;color:var(--body);margin-bottom:12px}
+footer .legal{color:var(--mute);font-size:.82rem;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+footer strong{color:var(--ink)}
+.trustline{display:none;gap:6px;flex-wrap:wrap;font-size:.85rem;color:var(--body);margin-bottom:10px}
+.trustline[data-show="yes"]{display:flex}
+
+/* sticky action bar */
+.dock{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  display:grid;grid-template-columns:1fr 1fr;gap:9px;
+  padding:9px 14px calc(9px + env(safe-area-inset-bottom));
+  background:color-mix(in srgb,var(--bg) 92%,transparent);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-top:1px solid var(--line);
+}
+.dock .btn{min-height:50px;font-size:.98rem;border-radius:11px}
+
+@media (min-width:640px){
+  body{font-size:17.5px}
+  h1{font-size:2.15rem}
+  h2{font-size:1.5rem}
+  section{padding:38px 0}
+  .actions{grid-template-columns:1fr 1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  .mapbox iframe{height:380px}
+}
+@media (min-width:900px){
+  body{padding-bottom:0}
+  .dock{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  html{scroll-behavior:auto}
+}
+
+/* bilingual */
+.i18n>[lang="hi"]{display:none}
+html[data-lang="hi"] .i18n>[lang="en"]{display:none}
+html[data-lang="hi"] .i18n>[lang="hi"]{display:revert}
+[hidden]{display:none!important}
+</style>
+
+<script type="application/ld+json" id="ld-business">
+{
+  "@context":"https://schema.org",
+  "@type":"Pharmacy",
+  "@id":"https://mednxt-smartdawakhana.github.io/MedNxt/#store",
+  "name":"MedNxt",
+  "alternateName":"MedNxt Smart Dawakhana",
+  "description":"Medical store in Gaya, Bihar offering 100% genuine medicines with 10–15% discount and free same-day home delivery across Gaya.",
+  "url":"https://mednxt-smartdawakhana.github.io/MedNxt/",
+  "image":"https://mednxt-smartdawakhana.github.io/MedNxt/assets/og-image.png",
+  "logo":"https://mednxt-smartdawakhana.github.io/MedNxt/assets/icon-512.png",
+  "telephone":"+918986030095",
+  "priceRange":"₹₹",
+  "currenciesAccepted":"INR",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Near Gol Patthar Chowk, G.B. Road",
+    "addressLocality":"Gaya",
+    "addressRegion":"Bihar",
+    "postalCode":"823001",
+    "addressCountry":"IN"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":24.799973,"longitude":85.006528},
+  "hasMap":"https://maps.google.com/?cid=13725571944082248683",
+  "areaServed":{"@type":"City","name":"Gaya","containedInPlace":{"@type":"State","name":"Bihar"}},
+  "makesOffer":[
+    {"@type":"Offer","name":"Free same-day home delivery in Gaya","priceCurrency":"INR","price":"0"},
+    {"@type":"Offer","name":"10–15% off on medicines"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Is home delivery free in Gaya?",
+     "acceptedAnswer":{"@type":"Answer","text":"Yes. MedNxt delivers free across Gaya city, with same-day delivery on orders placed during store hours. There is no delivery charge and no minimum order value."}},
+    {"@type":"Question","name":"Do I need a prescription to order medicines?",
+     "acceptedAnswer":{"@type":"Answer","text":"Prescription (Schedule H and H1) medicines require a valid doctor's prescription — send a clear photo of it on WhatsApp. Over-the-counter items such as pain relief, ORS, vitamins and first-aid supplies do not need a prescription."}},
+    {"@type":"Question","name":"How fast is delivery?",
+     "acceptedAnswer":{"@type":"Answer","text":"Orders placed during store hours are delivered the same day across Gaya. Online pharmacies typically take two to five days to reach Gaya."}},
+    {"@type":"Question","name":"How do I order?",
+     "acceptedAnswer":{"@type":"Answer","text":"Send a WhatsApp message to +91 89860 30095 with a photo of your prescription or a list of the medicines you need, along with your delivery address. You can also call the same number."}},
+    {"@type":"Question","name":"Are the medicines genuine?",
+     "acceptedAnswer":{"@type":"Answer","text":"Yes. MedNxt is a licensed retail pharmacy and stocks only medicines sourced from authorised distributors, stored as required by the manufacturer."}},
+    {"@type":"Question","name":"Can you supply monthly medicines for diabetes or blood pressure?",
+     "acceptedAnswer":{"@type":"Answer","text":"Yes. Share your regular monthly medicine list on WhatsApp and MedNxt will keep the stock reserved and send a refill reminder before you run out."}}
+  ]
+}
+</script>
 </head>
+
 <body>
-    <header>
-        <h1>MedNxt</h1>
-    </header>
+<a class="skip i18n" href="#main"><span lang="en">Skip to content</span><span lang="hi">मुख्य सामग्री पर जाएँ</span></a>
 
-    <main>
-        <!-- Logo Image -->
-        <div class="logo-container">
-            <img src="logo.png" alt="MedNxt Logo">
-        </div>
+<header class="site-head">
+  <div class="wrap head-in">
+    <picture>
+      <source srcset="assets/logo-256.webp" type="image/webp">
+      <img src="assets/logo-256.png" alt="MedNxt logo" width="38" height="38" fetchpriority="high">
+    </picture>
+    <div>
+      <div class="brand-name">MedNxt</div>
+      <div class="brand-sub">Gaya, Bihar</div>
+    </div>
+    <div class="lang" role="group" aria-label="Language / भाषा">
+      <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-set-lang="hi" aria-pressed="false" lang="hi">हिं</button>
+    </div>
+  </div>
+</header>
 
-        <p class="offer">
-            Get 10-15% OFF on all medicines with <strong>Free Same-Day Home Delivery</strong>.
-        </p>
+<main id="main">
 
-        <!-- WhatsApp Button -->
-        <a class="cta-button" href="https://wa.me/+918986030095?text=Hi%20MedNxt,%20I%20would%20like%20to%20place%20an%20order." target="_blank">
-            📩 Order on WhatsApp
+<section class="hero">
+  <div class="wrap">
+    <p class="status" id="status" data-open=""><span class="dot"></span><span class="label"></span></p>
+
+    <h1 class="i18n">
+      <span lang="en">Medicines delivered to your door in Gaya — the same day</span>
+      <span lang="hi">गया में दवाइयाँ आपके घर तक — उसी दिन</span>
+    </h1>
+
+    <p class="lede i18n">
+      <span lang="en">MedNxt is your neighbourhood medical store near Gol Patthar Chowk. Send us your prescription on WhatsApp and we bring your medicines home — free.</span>
+      <span lang="hi">मेडनेक्स्ट, गोल पत्थर चौक के पास आपकी अपनी दवा दुकान। व्हाट्सएप पर अपना पर्चा भेजिए और दवाइयाँ घर पर मँगवाइए — बिल्कुल मुफ्त।</span>
+    </p>
+
+    <div class="offer">
+      <div class="big">10–15%<br>OFF</div>
+      <div class="txt i18n">
+        <span lang="en">on all medicines, every order — plus <strong>free same-day home delivery</strong> anywhere in Gaya. No minimum order.</span>
+        <span lang="hi">हर ऑर्डर पर सभी दवाओं पर छूट — साथ में गया में कहीं भी <strong>मुफ्त सेम-डे होम डिलीवरी</strong>। कोई न्यूनतम ऑर्डर नहीं।</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-wa" data-wa href="#" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4 1.9.8 2.6.9 3.5.7.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.3c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.8-1.3-4.4 0-4.5 3.7-8.2 8.2-8.2s8.2 3.7 8.2 8.2-3.6 8.3-8 8.3z"/></svg>
+        <span class="i18n"><span lang="en">Order on WhatsApp</span><span lang="hi">व्हाट्सएप पर ऑर्डर करें</span></span>
+      </a>
+      <a class="btn btn-call" data-tel href="#">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+        <span class="i18n"><span lang="en">Call now</span><span lang="hi">अभी कॉल करें</span></span>
+      </a>
+    </div>
+
+    <div class="micro">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg><span class="i18n"><span lang="en">100% genuine</span><span lang="hi">100% असली दवा</span></span></span>
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg><span class="i18n"><span lang="en">Free delivery</span><span lang="hi">मुफ्त डिलीवरी</span></span></span>
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg><span class="i18n"><span lang="en">Licensed pharmacy</span><span lang="hi">लाइसेंस प्राप्त दुकान</span></span></span>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap">
+    <h2 class="i18n"><span lang="en">How to order — takes one minute</span><span lang="hi">ऑर्डर कैसे करें — सिर्फ एक मिनट</span></h2>
+    <ol class="steps">
+      <li><div><strong class="i18n"><span lang="en">Message us on WhatsApp</span><span lang="hi">व्हाट्सएप पर मैसेज करें</span></strong>
+        <span class="i18n"><span lang="en">Tap the green button — the chat opens ready to send.</span><span lang="hi">हरे बटन पर टैप करें — चैट सीधे खुल जाएगी।</span></span></div></li>
+      <li><div><strong class="i18n"><span lang="en">Send your prescription or medicine list</span><span lang="hi">पर्चा या दवा की सूची भेजें</span></strong>
+        <span class="i18n"><span lang="en">A photo of the doctor's slip is enough. Add your address.</span><span lang="hi">डॉक्टर की पर्ची की फोटो ही काफी है। साथ में अपना पता भेजें।</span></span></div></li>
+      <li><div><strong class="i18n"><span lang="en">We confirm price and deliver</span><span lang="hi">हम रेट बताकर डिलीवर करते हैं</span></strong>
+        <span class="i18n"><span lang="en">You see the discounted total before we send it out. Same day, across Gaya.</span><span lang="hi">भेजने से पहले छूट के बाद का कुल रेट आपको बताया जाएगा। उसी दिन, पूरे गया में।</span></span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="stock">
+  <div class="wrap">
+    <h2 class="i18n"><span lang="en">What we keep in stock</span><span lang="hi">हमारे पास क्या-क्या मिलता है</span></h2>
+    <p class="i18n"><span lang="en">Don't see what you need? Ask on WhatsApp — if it isn't on the shelf we usually arrange it the same day.</span><span lang="hi">जो चाहिए वो यहाँ नहीं दिख रहा? व्हाट्सएप पर पूछिए — दुकान में न हो तो हम अक्सर उसी दिन मँगवा देते हैं।</span></p>
+    <ul class="chips">
+      <li class="i18n"><span lang="en">Diabetes &amp; insulin</span><span lang="hi">डायबिटीज़ व इंसुलिन</span></li>
+      <li class="i18n"><span lang="en">BP &amp; heart</span><span lang="hi">बीपी व हृदय</span></li>
+      <li class="i18n"><span lang="en">Fever, cold &amp; pain</span><span lang="hi">बुखार, सर्दी व दर्द</span></li>
+      <li class="i18n"><span lang="en">Thyroid</span><span lang="hi">थायरॉइड</span></li>
+      <li class="i18n"><span lang="en">Antibiotics (on prescription)</span><span lang="hi">एंटीबायोटिक (पर्चे पर)</span></li>
+      <li class="i18n"><span lang="en">Baby &amp; mother care</span><span lang="hi">शिशु व मातृ देखभाल</span></li>
+      <li class="i18n"><span lang="en">Vitamins &amp; supplements</span><span lang="hi">विटामिन व सप्लीमेंट</span></li>
+      <li class="i18n"><span lang="en">Ayurvedic medicines</span><span lang="hi">आयुर्वेदिक दवाइयाँ</span></li>
+      <li class="i18n"><span lang="en">Surgical &amp; first aid</span><span lang="hi">सर्जिकल व फर्स्ट एड</span></li>
+      <li class="i18n"><span lang="en">Skin &amp; personal care</span><span lang="hi">त्वचा व पर्सनल केयर</span></li>
+      <li class="i18n"><span lang="en">Sugar &amp; BP monitors</span><span lang="hi">शुगर व बीपी मशीन</span></li>
+      <li class="i18n"><span lang="en">ORS, masks, sanitiser</span><span lang="hi">ओआरएस, मास्क, सैनिटाइज़र</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="refill">
+  <div class="wrap">
+    <div class="card">
+      <h3 class="i18n"><span lang="en">On monthly medicines? We'll remind you.</span><span lang="hi">हर महीने दवा लेते हैं? हम याद दिला देंगे।</span></h3>
+      <p class="i18n">
+        <span lang="en">If you take regular medicines for sugar, BP, thyroid or heart, send us the list once. We keep your stock reserved and message you a few days before it runs out — so you never miss a dose or make an emergency trip.</span>
+        <span lang="hi">अगर आप शुगर, बीपी, थायरॉइड या हृदय की दवा नियमित लेते हैं, तो एक बार सूची भेज दीजिए। हम आपका स्टॉक अलग रखते हैं और खत्म होने से कुछ दिन पहले मैसेज कर देते हैं — न दवा छूटेगी, न आपात दौड़।</span>
+      </p>
+      <p style="margin-top:14px">
+        <a class="btn btn-ghost" data-wa data-wa-msg="refill" href="#" rel="noopener">
+          <span class="i18n"><span lang="en">Set up my refill reminder</span><span lang="hi">मेरा रिमाइंडर चालू करें</span></span>
         </a>
+      </p>
+    </div>
+  </div>
+</section>
 
-        <p class="trust">
-            At MedNxt, we prioritize your health and convenience. All our medicines are 100% genuine, and our delivery services are fast and reliable.
-        </p>
+<section id="why">
+  <div class="wrap">
+    <h2 class="i18n"><span lang="en">Why buy here instead of an app</span><span lang="hi">ऐप की जगह यहाँ से क्यों लें</span></h2>
+    <table class="vs">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="i18n"><span lang="en">MedNxt</span><span lang="hi">मेडनेक्स्ट</span></th>
+          <th class="i18n"><span lang="en">Online apps</span><span lang="hi">ऑनलाइन ऐप</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="i18n"><span lang="en">Delivery time</span><span lang="hi">डिलीवरी का समय</span></th>
+          <td class="us i18n"><span lang="en">Same day</span><span lang="hi">उसी दिन</span></td>
+          <td class="them i18n"><span lang="en">2–5 days</span><span lang="hi">2–5 दिन</span></td>
+        </tr>
+        <tr>
+          <th class="i18n"><span lang="en">Delivery charge</span><span lang="hi">डिलीवरी चार्ज</span></th>
+          <td class="us i18n"><span lang="en">Free</span><span lang="hi">मुफ्त</span></td>
+          <td class="them i18n"><span lang="en">Free above a minimum</span><span lang="hi">न्यूनतम राशि के ऊपर</span></td>
+        </tr>
+        <tr>
+          <th class="i18n"><span lang="en">Urgent night medicine</span><span lang="hi">रात में ज़रूरी दवा</span></th>
+          <td class="us i18n"><span lang="en">Call us</span><span lang="hi">कॉल कीजिए</span></td>
+          <td class="them i18n"><span lang="en">Not possible</span><span lang="hi">संभव नहीं</span></td>
+        </tr>
+        <tr>
+          <th class="i18n"><span lang="en">Ask a real person</span><span lang="hi">किसी से बात करना</span></th>
+          <td class="us i18n"><span lang="en">Yes, on WhatsApp</span><span lang="hi">हाँ, व्हाट्सएप पर</span></td>
+          <td class="them i18n"><span lang="en">Chatbot</span><span lang="hi">चैटबॉट</span></td>
+        </tr>
+        <tr>
+          <th class="i18n"><span lang="en">Wrong or missing item</span><span lang="hi">गलत या छूटी दवा</span></th>
+          <td class="us i18n"><span lang="en">Fixed today</span><span lang="hi">आज ही ठीक</span></td>
+          <td class="them i18n"><span lang="en">Return request</span><span lang="hi">रिटर्न रिक्वेस्ट</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
-        <p>Place your order now and experience hassle-free service at your doorstep.</p>
+<section id="visit">
+  <div class="wrap">
+    <h2 class="i18n"><span lang="en">Visit the store</span><span lang="hi">दुकान पर आइए</span></h2>
+    <address class="addr" style="font-style:normal;margin-bottom:14px">
+      <strong>MedNxt</strong><br>
+      <span class="i18n"><span lang="en">Near Gol Patthar Chowk, G.B. Road</span><span lang="hi">गोल पत्थर चौक के पास, जी.बी. रोड</span></span><br>
+      <span class="i18n"><span lang="en">Gaya, Bihar 823001</span><span lang="hi">गया, बिहार 823001</span></span>
+    </address>
 
-        <!-- How It Works Section -->
-        <div class="how-it-works">
-            <h3>How to Order?</h3>
-            <p>1️⃣ Send us a message on WhatsApp 📲</p>
-            <p>2️⃣ Share your prescription or medicine details 📝</p>
-            <p>3️⃣ Get your order delivered fast! 🚀</p>
-        </div>
+    <p><a class="btn btn-ghost" id="directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=24.799973%2C85.006528" target="_blank" rel="noopener">
+      <span class="i18n"><span lang="en">📍 Get directions</span><span lang="hi">📍 रास्ता देखें</span></span>
+    </a></p>
 
-        <!-- Store Location -->
-        <p class="visit-store">📍 Visit Our Store: MedNxt, Near Gol Patthar Chowk, G.B. road, Gaya, Bihar-823001</p>
+    <div id="hours-block" hidden>
+      <h3 class="i18n" style="margin-top:22px"><span lang="en">Opening hours</span><span lang="hi">खुलने का समय</span></h3>
+      <table class="hours"><tbody id="hours-rows"></tbody></table>
+    </div>
 
-        <!-- Map Location -->
-        <div class="map-container">
-            <h3>Find Us Here</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.867989320269!2d85.00652817536897!3d24.799973477968827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32ba5993ba02f%3A0xbe7b06f6421713eb!2sMednxt!5e0!3m2!1sen!2sin!4v1740092801888!5m2!1sen!2sin" allowfullscreen></iframe>
-        </div>
-    </main>
+    <div class="mapbox" style="margin-top:20px">
+      <button type="button" id="map-load">
+        <span class="pin" aria-hidden="true">🗺️</span>
+        <span class="lbl i18n"><span lang="en">Show map</span><span lang="hi">नक्शा देखें</span></span>
+        <span class="hint i18n"><span lang="en">Loads Google Maps — tap to keep the page fast</span><span lang="hi">गूगल मैप खुलेगा — पेज तेज़ रखने के लिए टैप करें</span></span>
+      </button>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        &copy; 2025 MedNxt. All Rights Reserved.
-    </footer>
+<section id="faq">
+  <div class="wrap">
+    <h2 class="i18n"><span lang="en">Common questions</span><span lang="hi">आम सवाल</span></h2>
+
+    <details>
+      <summary class="i18n"><span lang="en">Is home delivery really free?</span><span lang="hi">क्या होम डिलीवरी सच में मुफ्त है?</span></summary>
+      <div class="ans i18n">
+        <p lang="en">Yes — free anywhere in Gaya city, with no minimum order value. Order during store hours and it reaches you the same day.</p>
+        <p lang="hi">हाँ — पूरे गया शहर में मुफ्त, कोई न्यूनतम ऑर्डर नहीं। दुकान के समय में ऑर्डर करें तो उसी दिन पहुँच जाएगी।</p>
+      </div>
+    </details>
+
+    <details>
+      <summary class="i18n"><span lang="en">Do I need a doctor's prescription?</span><span lang="hi">क्या डॉक्टर का पर्चा ज़रूरी है?</span></summary>
+      <div class="ans i18n">
+        <p lang="en">For prescription medicines, yes — send a clear photo of the doctor's slip on WhatsApp. Everyday items like pain relief, ORS, vitamins, bandages and baby care do not need one.</p>
+        <p lang="hi">पर्चे वाली दवाओं के लिए हाँ — व्हाट्सएप पर डॉक्टर की पर्ची की साफ फोटो भेजें। दर्द निवारक, ओआरएस, विटामिन, पट्टी और शिशु देखभाल जैसी सामान्य चीज़ों के लिए ज़रूरी नहीं।</p>
+      </div>
+    </details>
+
+    <details>
+      <summary class="i18n"><span lang="en">How do I pay?</span><span lang="hi">पेमेंट कैसे करें?</span></summary>
+      <div class="ans i18n">
+        <p lang="en">You can pay when the order reaches you. Message us on WhatsApp and we'll confirm the payment options that suit you.</p>
+        <p lang="hi">ऑर्डर पहुँचने पर भुगतान कर सकते हैं। व्हाट्सएप पर मैसेज करें, हम आपके लिए उपलब्ध पेमेंट विकल्प बता देंगे।</p>
+      </div>
+    </details>
+
+    <details>
+      <summary class="i18n"><span lang="en">How do I know the medicines are genuine?</span><span lang="hi">दवा असली है, यह कैसे पता चले?</span></summary>
+      <div class="ans i18n">
+        <p lang="en">We are a licensed retail pharmacy and buy only from authorised distributors. Every strip carries its batch number and expiry — check it when the order arrives, and if anything looks wrong we replace it the same day.</p>
+        <p lang="hi">हम लाइसेंस प्राप्त रिटेल फार्मेसी हैं और केवल अधिकृत डिस्ट्रीब्यूटर से ही खरीदते हैं। हर पत्ते पर बैच नंबर और एक्सपायरी होती है — डिलीवरी के समय जाँच लें, कोई गड़बड़ी लगे तो उसी दिन बदल देंगे।</p>
+      </div>
+    </details>
+
+    <details>
+      <summary class="i18n"><span lang="en">Can you supply my monthly sugar / BP medicines?</span><span lang="hi">क्या मेरी हर महीने की शुगर/बीपी दवा मिलेगी?</span></summary>
+      <div class="ans i18n">
+        <p lang="en">Yes. Send the list once on WhatsApp — we keep your stock reserved and remind you before it runs out, every month.</p>
+        <p lang="hi">हाँ। एक बार व्हाट्सएप पर सूची भेज दीजिए — हम हर महीने आपका स्टॉक रखेंगे और खत्म होने से पहले याद दिला देंगे।</p>
+      </div>
+    </details>
+
+    <details>
+      <summary class="i18n"><span lang="en">Which areas of Gaya do you deliver to?</span><span lang="hi">गया के किन इलाकों में डिलीवरी होती है?</span></summary>
+      <div class="ans i18n">
+        <p lang="en">We deliver across Gaya city. If you're a little outside, send your location on WhatsApp and we'll tell you straight away whether we can reach you.</p>
+        <p lang="hi">हम पूरे गया शहर में डिलीवरी करते हैं। अगर आप थोड़ा बाहर हैं, तो व्हाट्सएप पर अपनी लोकेशन भेजिए — हम तुरंत बता देंगे कि पहुँच सकते हैं या नहीं।</p>
+      </div>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="trustline" id="trustline"></div>
+    <address class="addr">
+      <strong>MedNxt</strong><br>
+      <span class="i18n"><span lang="en">Near Gol Patthar Chowk, G.B. Road, Gaya, Bihar 823001</span><span lang="hi">गोल पत्थर चौक के पास, जी.बी. रोड, गया, बिहार 823001</span></span><br>
+      <a data-tel href="#" id="foot-tel">+91 89860 30095</a>
+    </address>
+    <div class="legal">
+      <span class="i18n">
+        <span lang="en">© 2025 MedNxt. Medicines are dispensed against a valid prescription where required by law. Information on this page is not medical advice — please consult your doctor.</span>
+        <span lang="hi">© 2025 मेडनेक्स्ट। कानून के अनुसार जहाँ आवश्यक है, दवाइयाँ वैध पर्चे पर ही दी जाती हैं। इस पेज की जानकारी चिकित्सकीय सलाह नहीं है — कृपया अपने डॉक्टर से परामर्श लें।</span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Quick actions">
+  <a class="btn btn-call" data-tel href="#">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+    <span class="i18n"><span lang="en">Call</span><span lang="hi">कॉल</span></span>
+  </a>
+  <a class="btn btn-wa" data-wa href="#" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4 1.9.8 2.6.9 3.5.7.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.3c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.8-1.3-4.4 0-4.5 3.7-8.2 8.2-8.2s8.2 3.7 8.2 8.2-3.6 8.3-8 8.3z"/></svg>
+    <span class="i18n"><span lang="en">WhatsApp</span><span lang="hi">व्हाट्सएप</span></span>
+  </a>
+</nav>
+
+<script>
+const BUSINESS = {
+  phone: '+918986030095',
+  phoneDisplay: '+91 89860 30095',
+  whatsapp: '918986030095',
+
+  drugLicence:   'TODO_DRUG_LICENCE_NUMBERS',
+  pharmacist:    'TODO_PHARMACIST_NAME',
+  pharmacistReg: 'TODO_PHARMACIST_REGISTRATION_NUMBER',
+
+  hours: 'TODO_OPENING_HOURS',
+
+  analyticsId: ''
+};
+
+const HOURS_TEMPLATE = {
+  mon:['08:00','22:00'], tue:['08:00','22:00'], wed:['08:00','22:00'],
+  thu:['08:00','22:00'], fri:['08:00','22:00'], sat:['08:00','22:00'],
+  sun:['08:00','22:00']
+};
+
+(function () {
+  'use strict';
+
+  const isSet = v => v && typeof v === 'string' ? !v.startsWith('TODO_') : !!v;
+  const $  = (s, r) => (r || document).querySelector(s);
+  const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+
+  const STRINGS = {
+    openNow:  { en: 'Open now',   hi: 'अभी खुला है' },
+    closed:   { en: 'Closed now', hi: 'अभी बंद है' },
+    opensAt:  { en: 'Opens ',     hi: 'खुलेगा ' },
+    tomorrow: { en: 'tomorrow',   hi: 'कल' },
+    tillTime: { en: 'until ',     hi: 'तक, ' },
+    licence:  { en: 'Drug Licence No.', hi: 'ड्रग लाइसेंस नं.' },
+    pharm:    { en: 'Registered pharmacist', hi: 'पंजीकृत फार्मासिस्ट' },
+    days: {
+      mon:{en:'Monday',hi:'सोमवार'}, tue:{en:'Tuesday',hi:'मंगलवार'},
+      wed:{en:'Wednesday',hi:'बुधवार'}, thu:{en:'Thursday',hi:'गुरुवार'},
+      fri:{en:'Friday',hi:'शुक्रवार'}, sat:{en:'Saturday',hi:'शनिवार'},
+      sun:{en:'Sunday',hi:'रविवार'}
+    },
+    waDefault: {
+      en: 'Hi MedNxt, I would like to order medicines.',
+      hi: 'नमस्ते मेडनेक्स्ट, मुझे दवाइयाँ ऑर्डर करनी हैं।'
+    },
+    waRefill: {
+      en: 'Hi MedNxt, I take monthly medicines and would like to set up a refill reminder.',
+      hi: 'नमस्ते मेडनेक्स्ट, मैं हर महीने दवा लेता/लेती हूँ और रिमाइंडर चालू करवाना चाहता/चाहती हूँ।'
+    }
+  };
+
+  const DAY_KEYS = ['sun','mon','tue','wed','thu','fri','sat'];
+  let lang = 'en';
+
+  /* ---------- language ---------- */
+  function applyLang(next) {
+    lang = next === 'hi' ? 'hi' : 'en';
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+    $$('.lang button').forEach(b =>
+      b.setAttribute('aria-pressed', String(b.dataset.setLang === lang)));
+    try { localStorage.setItem('mednxt-lang', lang); } catch (e) {}
+    buildLinks();
+    renderStatus();
+    renderHours();
+    renderTrust();
+  }
+
+  $$('.lang button').forEach(b =>
+    b.addEventListener('click', () => { applyLang(b.dataset.setLang); track('lang_switch', b.dataset.setLang); }));
+
+  /* ---------- contact links ---------- */
+  function buildLinks() {
+    const msg = k => encodeURIComponent((k === 'refill' ? STRINGS.waRefill : STRINGS.waDefault)[lang]);
+    $$('[data-wa]').forEach(a => {
+      a.href = 'https://wa.me/' + BUSINESS.whatsapp + '?text=' + msg(a.dataset.waMsg);
+      a.target = '_blank';
+    });
+    $$('[data-tel]').forEach(a => { a.href = 'tel:' + BUSINESS.phone; });
+    const ft = $('#foot-tel');
+    if (ft) ft.textContent = BUSINESS.phoneDisplay;
+  }
+
+  /* ---------- opening hours ---------- */
+  function istParts() {
+    const p = new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Asia/Kolkata', weekday: 'short', hour: '2-digit',
+      minute: '2-digit', hour12: false
+    }).formatToParts(new Date()).reduce((o, x) => (o[x.type] = x.value, o), {});
+    const idx = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday);
+    return { dayIdx: idx, mins: (+p.hour % 24) * 60 + (+p.minute) };
+  }
+  const toMin = t => (+t.slice(0, 2)) * 60 + (+t.slice(3, 5));
+  const pretty = t => {
+    let h = +t.slice(0, 2); const m = t.slice(3, 5);
+    const ap = h >= 12 ? 'PM' : 'AM';
+    h = h % 12 || 12;
+    return h + (m === '00' ? '' : ':' + m) + ' ' + ap;
+  };
+
+  function renderStatus() {
+    const el = $('#status');
+    if (!isSet(BUSINESS.hours) || typeof BUSINESS.hours !== 'object') {
+      el.dataset.open = ''; return;
+    }
+    const { dayIdx, mins } = istParts();
+    const today = BUSINESS.hours[DAY_KEYS[dayIdx]];
+    const open = Array.isArray(today) && mins >= toMin(today[0]) && mins < toMin(today[1]);
+    el.dataset.open = open ? 'yes' : 'no';
+
+    let text;
+    if (open) {
+      text = STRINGS.openNow[lang] + ' · ' + STRINGS.tillTime[lang] + pretty(today[1]);
+    } else {
+      let nxt = null;
+      for (let i = 0; i < 7; i++) {
+        const k = DAY_KEYS[(dayIdx + i) % 7], h = BUSINESS.hours[k];
+        if (!Array.isArray(h)) continue;
+        if (i === 0 && mins < toMin(h[0])) { nxt = pretty(h[0]); break; }
+        if (i > 0) {
+          nxt = (i === 1 ? STRINGS.tomorrow[lang] : STRINGS.days[k][lang]) + ' ' + pretty(h[0]);
+          break;
+        }
+      }
+      text = STRINGS.closed[lang] + (nxt ? ' · ' + STRINGS.opensAt[lang] + nxt : '');
+    }
+    $('.label', el).textContent = text;
+  }
+
+  function renderHours() {
+    const box = $('#hours-block'), rows = $('#hours-rows');
+    if (!isSet(BUSINESS.hours) || typeof BUSINESS.hours !== 'object') { box.hidden = true; return; }
+    box.hidden = false;
+    const todayKey = DAY_KEYS[istParts().dayIdx];
+    rows.innerHTML = '';
+    ['mon','tue','wed','thu','fri','sat','sun'].forEach(k => {
+      const h = BUSINESS.hours[k], tr = document.createElement('tr');
+      if (k === todayKey) tr.setAttribute('data-today', '');
+      const a = document.createElement('td'), b = document.createElement('td');
+      a.textContent = STRINGS.days[k][lang];
+      b.textContent = Array.isArray(h) ? pretty(h[0]) + ' – ' + pretty(h[1])
+                                       : (lang === 'hi' ? 'बंद' : 'Closed');
+      tr.append(a, b); rows.appendChild(tr);
+    });
+  }
+
+  function renderTrust() {
+    const el = $('#trustline'); const bits = [];
+    if (isSet(BUSINESS.drugLicence)) bits.push(STRINGS.licence[lang] + ' ' + BUSINESS.drugLicence);
+    if (isSet(BUSINESS.pharmacist)) {
+      bits.push(STRINGS.pharm[lang] + ': ' + BUSINESS.pharmacist +
+        (isSet(BUSINESS.pharmacistReg) ? ' (' + BUSINESS.pharmacistReg + ')' : ''));
+    }
+    el.textContent = bits.join(' · ');
+    el.dataset.show = bits.length ? 'yes' : 'no';
+  }
+
+  /* ---------- structured data ---------- */
+  function patchSchema() {
+    const node = $('#ld-business');
+    let data; try { data = JSON.parse(node.textContent); } catch (e) { return; }
+
+    if (isSet(BUSINESS.hours) && typeof BUSINESS.hours === 'object') {
+      const map = { mon:'Monday',tue:'Tuesday',wed:'Wednesday',thu:'Thursday',
+                    fri:'Friday',sat:'Saturday',sun:'Sunday' };
+      const spec = Object.keys(map).reduce((acc, k) => {
+        const h = BUSINESS.hours[k];
+        if (Array.isArray(h)) acc.push({
+          '@type':'OpeningHoursSpecification',
+          dayOfWeek:'https://schema.org/' + map[k],
+          opens:h[0], closes:h[1]
+        });
+        return acc;
+      }, []);
+      if (spec.length) data.openingHoursSpecification = spec;
+    }
+    if (isSet(BUSINESS.drugLicence)) {
+      data.hasCredential = { '@type':'EducationalOccupationalCredential',
+        credentialCategory:'Drug Licence', identifier: BUSINESS.drugLicence };
+    }
+    if (isSet(BUSINESS.pharmacist)) {
+      data.employee = { '@type':'Person', name: BUSINESS.pharmacist, jobTitle:'Registered Pharmacist' };
+    }
+    node.textContent = JSON.stringify(data);
+  }
+
+  /* ---------- map facade ---------- */
+  const mapBtn = $('#map-load');
+  mapBtn.addEventListener('click', () => {
+    const f = document.createElement('iframe');
+    f.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.867989320269!2d85.00652817536897!3d24.799973477968827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32ba5993ba02f%3A0xbe7b06f6421713eb!2sMednxt!5e0!3m2!1sen!2sin!4v1740092801888!5m2!1sen!2sin';
+    f.loading = 'lazy';
+    f.referrerPolicy = 'no-referrer-when-downgrade';
+    f.title = 'MedNxt store location on Google Maps';
+    f.setAttribute('allowfullscreen', '');
+    mapBtn.replaceWith(f);
+    track('map_open');
+  });
+
+  /* ---------- lightweight event tracking ---------- */
+  function track(name, value) {
+    if (window.gtag) window.gtag('event', name, { value: value });
+  }
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a');
+    if (!a) return;
+    if (a.matches('[data-wa]')) track('whatsapp_click', a.dataset.waMsg || 'order');
+    else if (a.matches('[data-tel]')) track('call_click');
+    else if (a.id === 'directions') track('directions_click');
+  });
+
+  if (BUSINESS.analyticsId) {
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + BUSINESS.analyticsId;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', BUSINESS.analyticsId);
+  }
+
+  /* ---------- boot ---------- */
+  let saved = null;
+  try { saved = localStorage.getItem('mednxt-lang'); } catch (e) {}
+  if (!saved && (navigator.language || '').toLowerCase().startsWith('hi')) saved = 'hi';
+  applyLang(saved || 'en');
+  patchSchema();
+  setInterval(renderStatus, 60000);
+})();
+</script>
 </body>
 </html>

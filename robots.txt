@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mednxt-smartdawakhana.github.io/MedNxt/sitemap.xml
